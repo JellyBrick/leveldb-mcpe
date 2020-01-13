@@ -7,6 +7,13 @@
 #ifndef STORAGE_LEVELDB_PORT_PORT_POSIX_H_
 #define STORAGE_LEVELDB_PORT_PORT_POSIX_H_
 
+#ifndef __BYTE_ORDER
+  #define __BYTE_ORDER _BYTE_ORDER
+#endif
+#ifndef __LITTLE_ENDIAN
+  #define __LITTLE_ENDIAN _LITTLE_ENDIAN
+#endif
+
 #undef PLATFORM_IS_LITTLE_ENDIAN
 #if defined(OS_MACOSX)
   #include <machine/endian.h>
