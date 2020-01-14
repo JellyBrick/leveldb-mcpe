@@ -14,7 +14,7 @@ INCLUDE("${leveldb_SOURCE_DIR}/cmake_conf/leveldb.cmake")
 
 INCLUDE("leveldb.cmake")
 
-ADD_LIBRARY(leveldb SHARED
+ADD_LIBRARY(leveldb STATIC
             ${leveldb_SRC})
 
 TARGET_LINK_LIBRARIES(leveldb
