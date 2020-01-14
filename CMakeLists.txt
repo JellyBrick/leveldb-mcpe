@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 2.8)
 
-PROJECT(leveldb)
+PROJECT(leveldb NONE)
 SET(CMAKE_CXX_STANDARD 14)
 
 ADD_DEFINITIONS(-Ofast -DNDEBUG -DWIN32 -DDLLX=__declspec(dllexport) -DLEVELDB_PLATFORM_WINDOWS)
